@@ -3,73 +3,185 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <!-- <script src="assets/javascript/app.js"></script> -->
 
 <head>
     <title>FoamerFrienz</title>
-    <script src="assets/javascript/app.js"></script>
+    <!-- <script src="assets/javascript/app.js"></script> -->
 </head>
+
 <body>
-	<form id="survey">
-		<label for="nameInput">Name:</label>
-            <input type="text" id="nameInput"><br>
-		<label for="uploadImage">Please link image of yourself:</label>
-			<input type="text" id="uploadImage"><br>
-
-		<div class="input-field col s12">
-							<h3>Question 1</h3>
-							<h5>Oil burning steam engines aren't real steam engines.</h5>
-							<select id="question1">
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">1 (Strongly Disagree)</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5 (Strongly Agree)</option>
-							</select>
-
-		<h3>Question 2</h3>
-		<h4>weetsie is better than Dollywood.</h4>
-		
-
-		<h3>Question 2</h3>
-		<h4>Tweetsie is better than Dollywood.</h4>
-	 	<select data-placeholder="" class="chosen-select" id="q5">
-	 		<option value=""></option>
+    <form id="survey">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput">
+        <br>
+        <label for="uploadImage">Please link image of yourself:</label>
+       <!--  How shoud it be saved? -->
+        <input type="text" id="uploadImage">
+        <br>
+        
+        <h3>Question 1</h3>
+        <h4>Oil burning steam engines aren't real steam engines.</h4>
+        <select class="answers" id="question1">
+            <option value="" disabled selected>Select Answer</option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
-      	</select>
+        </select>
+        
+        <h3>Question 2</h3>
+        <h4>Tweetsie is better than Dollywood.</h4>
+        <select class="answers" id="question2">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        
+        <h3>Question 3</h3>
+        <h4>NYC is better than PRR.</h4>
+        <select class="answers" id="question3">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-      	<h4><strong>Question 1</strong></h4>
-			<fieldset class="form-group">
-				<label for="question01">BL-2's are ugly.</label>
-				<br>
-				<div class="col-md-4">
-					<select class="form-control" id="question01" name="scores[0]">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
-					</select>
-				</div>
-			</fieldset>
+        <h3>Question 4</h3>
+        <h4>Willamette's are just rip offs of Lima's Shay.</h4>
+        <select class="answers" id="question4">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
- 
-<!-- "UP is the best class 1 because they have a steam program. 1-5" "BL-2's are ugly. 1-5" GE is better than EMD. 1-5" "Amtrak is the best way to travel. 1-5" "Strasburg is the best railroad ever. 1-5" "Every railroad needs steam engines and should double or triplehead steam engines at every chance. 1-5" "Narrow gauge is cooler than standard gauge. 1-5" Brian McDonnell Brian "Steam engines are better than diesels. 1-5" "Willamette's are just rip offs of Lima's Shay 1-5" Jonathan Eau Claire Jonathan "Steam engines belong on turntables. 1-5" "NYC is better than PRR. 1-5" Everett Meehling Everett "CSX is evil 1-5" Daniel "1218 is better than 611 1-5" "1361 will never EVER run again. 1-5" Daniel -->
+        <h3>Question 5</h3>
+        <h4>BL-2's are ugly.</h4>
+        <select class="answers" id="question5">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
 
-		
-		<input id="submit" type="submit" value="Submit">
+        <h3>Question 6</h3>
+        <h4>CSX is evil</h4>
+        <select class="answers" id="question6">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 7</h3>
+        <h4>Steam engines belong on turntables.</h4>
+        <select class="answers" id="question7">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 8</h3>
+        <h4>The Mount Washington Cog Railway became a joke after it dieselized.</h4>
+        <select class="answers" id="question8">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 9</h3>
+        <h4> 1218 is better than 611.</h4>
+        <select class="answers" id="question9">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 10</h3>
+        <h4>1361 will never EVER run again.</h4>
+        <select class="answers" id="question10">
+            <option value="" disabled selected>Select Answer</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br><br><br>
 
-            
-        </form>
-
-	First Class on Amtrak or coach on the orient ezpress 
-
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    
 </body>
 
+<script type="text/javascript">
+		$(document).ready(function() {
+			// $('select').material_select(); the rest will function without this
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+
+			};
+			console.log(userInput.scores);
+			// console.log('userInput = ' + JSON.stringify(userInput));
+			// Add user inputs to friends list
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+      			// Set the name and image values of friend match
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+		    	// Pop open the modal dialog
+      			$('#modal1').modal('open');
+      		});
+		});
+	</script>
 
 </html>
