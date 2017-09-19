@@ -19,9 +19,9 @@
         <label for="nameInput">Name:</label>
         <input type="text" id="nameInput">
         <br>
-        <label for="uploadImage">Please link image of yourself:</label>
+        <!-- <label for="uploadImage">Please link image of yourself:</label> -->
        <!--  How shoud it be saved? -->
-        <input type="text" id="uploadImage">
+        <!-- <input type="text" id="uploadImage"> -->
         <br>
         
         <h3>Question 1</h3>
@@ -137,24 +137,26 @@
 </body>
 
 <script type="text/javascript">
-		$(document).ready(function() {
-			// $('select').material_select(); the rest will function without this
-			$('.modal').modal({
-				dismissible: false, // Modal can be dismissed by clicking outside of the modal
-				opacity: .5, // Opacity of modal background
-				inDuration: 300, // Transition in duration
-				outDuration: 200, // Transition out duration
-				startingTop: '4%', // Starting top style attribute
-				endingTop: '10%' // Ending top style attribute
-			});
-		});
+		// $(document).ready(function() {
+		// 	// $('select').material_select(); the rest will function without this
+		// 	$('.modal').modal({
+		// 		dismissible: false, // Modal can be dismissed by clicking outside of the modal
+		// 		opacity: .5, // Opacity of modal background
+		// 		inDuration: 300, // Transition in duration
+		// 		outDuration: 200, // Transition out duration
+		// 		startingTop: '4%', // Starting top style attribute
+		// 		endingTop: '10%' // Ending top style attribute
+		// 	});
+		// });
 		// Activate submit button
-		$('#submitButton').on('click', function(event) {
+		$('#submit').on('click', function(event) {
 			event.preventDefault();
+
+			console.log("submit");
 			// Gather user inputs
 			var userInput = {
-				name: $('#userName').val().trim(),
-				photo: $('#userPhoto').val().trim(),
+				name: $('#nameInput').val().trim(),
+				// photo: $('#uploadImage').val().trim(),
 				scores:[
 					$('#question1').val().trim(),
 					$('#question2').val().trim(),
@@ -169,15 +171,17 @@
 				]
 
 			};
-			console.log(userInput.scores);
+			console.log("bob" + userInput.name);
+			console.log("just the numbers" + userInput.scores);
 			// console.log('userInput = ' + JSON.stringify(userInput));
 			// Add user inputs to friends list
+			// $.post('../routing/apiRoutes', userInput)
 			$.post('/api/friends', userInput)
       		.done(function(data) {
-      			// console.log('response = ' + JSON.stringify(data));
+      			console.log('response = ' + JSON.stringify(data));
       			// Set the name and image values of friend match
       			$('#userMatch').html(data.matchName);
-		    	$("#userMatchImage").attr("src", data.matchImage);
+		    	// $("#uploadImage").attr("src", data.matchImage);
 		    	// Pop open the modal dialog
       			$('#modal1').modal('open');
       		});
