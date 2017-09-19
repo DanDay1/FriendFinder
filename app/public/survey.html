@@ -135,22 +135,54 @@
         <br><br><br>
 
         <input id="submit" type="submit" value="Submit">
+
+        <br><br><br>
+
+        <h1>Results</h1><br>
+        <p>Name: 
     </form>
+
+    <!-- Modal content -->
+<!-- <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div class="modal-body">
+    <p>Some text in the Modal Body</p>
+    <p>Some other text...</p>
+  </div>
+  <div class="modal-footer">
+    <h3>Modal Footer</h3>
+  </div>
+</div> -->
+
+    <a href="#" data-popup-open="popup1 resultsModal"></a></p>
+            <div class="popup" data-popup="popup1">
+                <div class="popup-inner">
+                    <span id="userMatch"></span>
+                    <!-- <span id="matchImg"></span> -->
+                    <a class="popup-close" data-popup-close="popup1" href="#">x</a>
+                </div>
+            </div>
+
+
+
     
 </body>
 
 <script type="text/javascript">
-		// $(document).ready(function() {
-		// 	// $('select').material_select(); the rest will function without this
-		// 	$('.modal').modal({
-		// 		dismissible: false, // Modal can be dismissed by clicking outside of the modal
-		// 		opacity: .5, // Opacity of modal background
-		// 		inDuration: 300, // Transition in duration
-		// 		outDuration: 200, // Transition out duration
-		// 		startingTop: '4%', // Starting top style attribute
-		// 		endingTop: '10%' // Ending top style attribute
-		// 	});
-		// });
+		$(document).ready(function() {
+			// $('select').material_select(); the rest will function without this
+			// $('.modal').modal({
+			// 	dismissible: false, // Modal can be dismissed by clicking outside of the modal
+			// 	opacity: .5, // Opacity of modal background
+			// 	inDuration: 300, // Transition in duration
+			// 	outDuration: 200, // Transition out duration
+			// 	startingTop: '4%', // Starting top style attribute
+			// 	endingTop: '10%' // Ending top style attribute
+			// });
+		});
 		// Activate submit button
 		$('#submit').on('click', function(event) {
 			event.preventDefault();
@@ -189,6 +221,8 @@
       			$('#modal1').modal('open');
       		});
 		});
+
+
 	</script>
 
 </html>
