@@ -1,8 +1,6 @@
 body {
  /*background: #717171;*/
  background: #9C9C9C;
-
-
 }
 
 .container {
@@ -10,10 +8,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   clear: both;
- 
  }
-
-
 
  h1 {
  	padding-top: 20px;
@@ -36,16 +31,12 @@ body {
 	color: #044BC7;
  }
 
-
-
  p  {
  	font-size: 24px;
  	/*color: #FFFFFF;*/
  	line-height: 36px;
  	font-family: helvetica, arial, "New Rail Alphabet", "Galaxie Polaris";
  }
-
-
 
  .btn-default {
   padding: 15px;
@@ -55,6 +46,4 @@ body {
   font-family: helvetica, arial, "New Rail Alphabet", "Galaxie Polaris";
   font-size: 18px;
   background-color: #ccc;
-  
-
 }

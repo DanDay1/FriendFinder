@@ -15,10 +15,6 @@ module.exports = function(app) {
 	app.post('/api/friends', function(req, res) {
 
 		console.log("post");
-		
-	// 	var userInput = {"name" : "Ryan",
-	// "photo" : "www.google.com",
-	// "scores" : [2,3,2,4,2,5,3,2,4,2]};
 
 		var userInput = req.body;
 		console.log('userInput = ' + JSON.stringify(userInput));

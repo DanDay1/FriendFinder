@@ -12,143 +12,143 @@
 </head>
 
 <body>
-	<div class="container">
-    <form id="survey">
-        <label for="nameInput">Name:</label>
-        <input type="text" id="nameInput">
-        <br>
-        <label for="uploadImage">Please link image of yourself:</label>
-        <!--  How shoud it be saved? -->
-        <input type="text" id="uploadImage">
-        <br>
-        <h3>Question 1</h3>
-        <h4>Oil burning steam engines aren't real steam engines.</h4>
-        <select class="answers" id="question1">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 2</h3>
-        <h4>Tweetsie is better than Dollywood.</h4>
-        <select class="answers" id="question2">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 3</h3>
-        <h4>NYC is better than PRR.</h4>
-        <select class="answers" id="question3">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 4</h3>
-        <h4>Willamette's are just rip offs of Lima's Shay.</h4>
-        <select class="answers" id="question4">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 5</h3>
-        <h4>BL-2's are ugly.</h4>
-        <select class="answers" id="question5">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 6</h3>
-        <h4>CSX is evil.</h4>
-        <select class="answers" id="question6">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 7</h3>
-        <h4>Steam engines belong on turntables.</h4>
-        <select class="answers" id="question7">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 8</h3>
-        <h4>The Mount Washington Cog Railway became a joke after it dieselized.</h4>
-        <select class="answers" id="question8">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 9</h3>
-        <h4> 1218 is better than 611.</h4>
-        <select class="answers" id="question9">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <h3>Question 10</h3>
-        <h4>1361 will never EVER run again.</h4>
-        <select class="answers" id="question10">
-            <option value="" disabled selected>Select Answer</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-        <br>
-        <br>
-        <br>
-        <input id="submit" type="submit" value="Submit">
-    </form>
-    <div id="modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Result:</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Name:</p>
-                    <span id="userMatch"></span>
-                    <p>Picture:</p>
-                    <img alt="match" src="" style="width: 200px;" id="userImage"></span>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <div class="container">
+        <form id="survey">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput">
+            <br>
+            <label for="uploadImage">Please link image of yourself:</label>
+            <!--  How shoud it be saved? -->
+            <input type="text" id="uploadImage">
+            <br>
+            <h3>Question 1</h3>
+            <h4>Oil burning steam engines aren't real steam engines.</h4>
+            <select class="answers" id="question1">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 2</h3>
+            <h4>Tweetsie is better than Dollywood.</h4>
+            <select class="answers" id="question2">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 3</h3>
+            <h4>NYC is better than PRR.</h4>
+            <select class="answers" id="question3">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 4</h3>
+            <h4>Willamette's are just rip offs of Lima's Shay.</h4>
+            <select class="answers" id="question4">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 5</h3>
+            <h4>BL-2's are ugly.</h4>
+            <select class="answers" id="question5">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 6</h3>
+            <h4>CSX is evil.</h4>
+            <select class="answers" id="question6">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 7</h3>
+            <h4>Steam engines belong on turntables.</h4>
+            <select class="answers" id="question7">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 8</h3>
+            <h4>The Mount Washington Cog Railway became a joke after it dieselized.</h4>
+            <select class="answers" id="question8">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 9</h3>
+            <h4> 1218 is better than 611.</h4>
+            <select class="answers" id="question9">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 10</h3>
+            <h4>1361 will never EVER run again.</h4>
+            <select class="answers" id="question10">
+                <option value="" disabled selected>Select Answer</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div id="modal" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Result:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Name:</p>
+                        <span id="userMatch"></span>
+                        <p>Picture:</p>
+                        <img alt="match" src="" style="width: 200px;" id="userImage"></span>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <script type="text/javascript">
     // Activate submit button
     $('#submit').on('click', function(event) {
